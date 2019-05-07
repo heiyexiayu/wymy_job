@@ -22,13 +22,15 @@ public class ShellSort {
                         arr[j]=arr[j-d];
                         arr[j-d]=temp;
                     }
+                    else
+                        break;
                 }
             }
         }
     }
 
     public static void main(String[] args) {
-        int []arr={0,9,9,8,2,4,3,1,2,0};
+        int []arr={0,9,9,8,2,4,3,7,1,2,0};
         shellSort(arr);
         System.out.println(Arrays.toString(arr));
     }
