@@ -36,9 +36,8 @@ public class HeapSortTest {
             }
             //在最大堆的条件下 如果父节点值比子节点都大，就不需要再往下比较
             else break;
-            arr[i]=temp;
         }
-
+        arr[i]=temp;
 
     }
     public static void swap(int[]arr,int a,int b){
@@ -48,7 +47,7 @@ public class HeapSortTest {
     }
 
     public static void main(String[] args) {
-        int []arr1= {10,1,7,8,4,7,4,8,3,5,9};
+        int []arr1= {11,12,14,10,5,9,8,7,3,6,4};
         int arr[]=new int[100000];
         int j=0;
         for(int i=arr.length-1;i>=0;i--){
@@ -57,10 +56,10 @@ public class HeapSortTest {
         }
         sort(arr1);
         System.out.println(Arrays.toString(arr1));
-        System.out.println("----------");
-        System.out.println(new Date().getTime());
-        sort(arr);
-        System.out.println(new Date().getTime());
-        System.out.println(Arrays.toString(arr));
+//        System.out.println("----------");
+//        System.out.println(new Date().getTime());
+//        sort(arr);
+//        System.out.println(new Date().getTime());
+//        System.out.println(Arrays.toString(arr));
     }
 }
