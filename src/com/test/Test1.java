@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Test1 {
     public static void main(String[] args) {
-        System.out.println((new Date().getTime()+"").length());
+        System.out.println((new Date().getTime() + "").length());
     }
 //    public void ff( LinkedList<String>list, String o){
 //        Iterator <String> ite=list. iterator() ;

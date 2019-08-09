@@ -117,7 +117,7 @@ public class Binary {
         tree.theFirstTraversal_Stack(root);
         System.out.println("");
         System.out.println("中序遍历");
-       // tree.theInOrderTraversal_Stack(root);
+        // tree.theInOrderTraversal_Stack(root);
         System.out.println("");
         System.out.println("后序遍历");
         tree.thePostOrderTraversal_Stack(root);

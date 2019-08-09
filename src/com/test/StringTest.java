@@ -5,7 +5,7 @@ package com.test;
  * @Date 2019/4/22 16:54
  */
 public class StringTest {
-//    public static void main(String[] args) {
+    //    public static void main(String[] args) {
 //        String s=new String("ab.c.d.efg");
 //        System.out.println(s.hashCode());
 //        char a='0';
@@ -51,24 +51,24 @@ public class StringTest {
 //             String s=a+b;
 //             System.out.println(concat.intern()==c);
 //         }
-public static void main(String[] args) {
-  //采取字面值的方式
-    String s1="a";
-    String s2="b";
-    String s4="ab";
-    String s5="a"+"b";
-    //采取new方式（会申请内存空间）
-    String s3=new String("a");
-    String s6=new String("ab");
-    System.out.println("s1==s3: "+(s1==s3));
-    System.out.println("s1+s2==s4: "+ ((s1+s2)==s4));
-    System.out.println("s1+s2==s5: "+((s1+s2)==s5) );
-    System.out.println("s5==s6: "+( s5==s6));
-    System.out.println("s4==s5: "+(s4==s5));
+    public static void main(String[] args) {
+        //采取字面值的方式
+        String s1 = "a";
+        String s2 = "b";
+        String s4 = "ab";
+        String s5 = "a" + "b";
+        //采取new方式（会申请内存空间）
+        String s3 = new String("a");
+        String s6 = new String("ab");
+        System.out.println("s1==s3: " + (s1 == s3));
+        System.out.println("s1+s2==s4: " + ((s1 + s2) == s4));
+        System.out.println("s1+s2==s5: " + ((s1 + s2) == s5));
+        System.out.println("s5==s6: " + (s5 == s6));
+        System.out.println("s4==s5: " + (s4 == s5));
 
-    System.out.println("s1==s3.intern(): "+(s1==s3.intern()));
+        System.out.println("s1==s3.intern(): " + (s1 == s3.intern()));
 
-    StringBuffer stringBuffer= new StringBuffer("a");
-    System.out.println(stringBuffer.append("b"));
-}
+        StringBuffer stringBuffer = new StringBuffer("a");
+        System.out.println(stringBuffer.append("b"));
+    }
 }

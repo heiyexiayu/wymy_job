@@ -35,8 +35,8 @@ public class Test22_List {
         list.add(5);
 //        delete(3, list);
 //        print(list);
-        for(int i=0;i<100;i++){
-            System.out.println( new Random().nextInt(10));
+        for (int i = 0; i < 100; i++) {
+            System.out.println(new Random().nextInt(10));
         }
 
 

@@ -7,8 +7,10 @@ package com.arithmetic.sorttree;
 public class BinarySortree {
     //根节点
     Node root;
+
     /**
      * 添加节点
+     *
      * @param node
      */
     void add(Node node) {
@@ -20,9 +22,10 @@ public class BinarySortree {
     }
 
     //查询树的最大深度
-     public int high(Node node){
-        return Math.max(node.left==null?0:high(node.left),node.right==null?0:high(node.right))+1;
-     }
+    public int high(Node node) {
+        return Math.max(node.left == null ? 0 : high(node.left), node.right == null ? 0 : high(node.right)) + 1;
+    }
+
     /**
      * 中序遍历
      */
@@ -44,6 +47,7 @@ public class BinarySortree {
 
     /**
      * 根据值查询节点
+     *
      * @param value
      * @return
      */
@@ -56,6 +60,7 @@ public class BinarySortree {
 
     /**
      * 删除节点
+     *
      * @param i
      */
     public void delete(int i) {
@@ -122,8 +127,10 @@ public class BinarySortree {
         delete(target.value);
         return target;
     }
+
     /**
      * 查询父节点
+     *
      * @param value
      * @return
      */

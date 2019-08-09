@@ -9,7 +9,7 @@ import java.util.List;
  * @Date 2019/4/24 19:30
  */
 class Solution {
-//    public List<List<Integer>> threeSum(int[] nums) {
+    //    public List<List<Integer>> threeSum(int[] nums) {
 //
 //        List<List<Integer>> listList = new ArrayList<>();
 //        // 如果为null或者长度小于3则返回空
@@ -57,37 +57,37 @@ class Solution {
 //
 //        return listList;
 //    }
-    public  List<List<Integer>> threeSum(int []nums){
-        List<List<Integer>> lists=new ArrayList<>();
+    public List<List<Integer>> threeSum(int[] nums) {
+        List<List<Integer>> lists = new ArrayList<>();
         Arrays.sort(nums);
-        for(int i=0;i<nums.length;i++){
-            if(i!=0&&nums[i]==nums[i-1]){
+        for (int i = 0; i < nums.length; i++) {
+            if (i != 0 && nums[i] == nums[i - 1]) {
                 continue;
             }
-            if(nums[i]>=1){
+            if (nums[i] >= 1) {
                 break;
             }
-            int temp=-nums[i];
-            int m=i+1;
-            int n=nums.length-1;
-            while(m<n){
-                if(nums[m]+nums[n]==temp){
+            int temp = -nums[i];
+            int m = i + 1;
+            int n = nums.length - 1;
+            while (m < n) {
+                if (nums[m] + nums[n] == temp) {
                     lists.add(Arrays.asList(nums[i], nums[m], nums[n]));
                     n--;
                     m++;
-                    while(m<n&&nums[n]==nums[n+1]){
+                    while (m < n && nums[n] == nums[n + 1]) {
                         n--;
                     }
-                    while(m<n&&nums[m]==nums[m-1]){
+                    while (m < n && nums[m] == nums[m - 1]) {
                         m++;
                     }
-                }else if(nums[m]+nums[n]>temp){
+                } else if (nums[m] + nums[n] > temp) {
                     n--;
-                }else {
+                } else {
                     m++;
                 }
             }
         }
-           return lists;
+        return lists;
     }
 }

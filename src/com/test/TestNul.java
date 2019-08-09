@@ -13,6 +13,6 @@ public class TestNul {
             System.out.println("No");
 
         }
-        System.out.println(31>>1);
+        System.out.println(31 >> 1);
     }
 }

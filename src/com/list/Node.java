@@ -5,12 +5,14 @@ package com.list;
  * @Date ${Date} ${Time}
  */
 public class Node {
-    private int  data;
+    private int data;
     public Node next;
-    public Node(int data){
-        this.data=data;
+
+    public Node(int data) {
+        this.data = data;
     }
-   public void showData(){
-       System.out.print(data+" ");
-   }
+
+    public void showData() {
+        System.out.print(data + " ");
+    }
 }

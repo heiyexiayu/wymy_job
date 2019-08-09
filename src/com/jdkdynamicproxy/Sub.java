@@ -6,5 +6,6 @@ package com.jdkdynamicproxy;
  */
 public interface Sub {
     void printy();
+
     String sayHello(String name);
 }

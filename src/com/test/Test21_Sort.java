@@ -18,34 +18,32 @@ public class Test21_Sort {
             arr[j + 1] = temp;
         }
     }
+
     //插入
-    public static void insert(int [] objects){
-        for(int i=1;i<objects.length;i++){
-            int j=0;
-            int temp =objects[i];//object[i] 在过程中可能会变化 需要一个变量暂时存储其信息
-            for( j=i-1;j>=0;j--){
-                if(objects[j]>temp){
-                    objects[j+1]=objects[j];
-                }else break;
+    public static void insert(int[] objects) {
+        for (int i = 1; i < objects.length; i++) {
+            int j = 0;
+            int temp = objects[i];//object[i] 在过程中可能会变化 需要一个变量暂时存储其信息
+            for (j = i - 1; j >= 0; j--) {
+                if (objects[j] > temp) {
+                    objects[j + 1] = objects[j];
+                } else break;
             }
-            objects[j+1]=temp;
+            objects[j + 1] = temp;
         }
     }
 
 
-
-
-
-    public static  void diii(int []arr){
-        for(int i=1;i<arr.length;i++){
-            int temp =arr[i];
-            int j=0;
-            for( j =i-1;j>=0;j--){
-                if(arr[j]>temp){
-                    arr[j+1]=arr[j];
-                }else break;
+    public static void diii(int[] arr) {
+        for (int i = 1; i < arr.length; i++) {
+            int temp = arr[i];
+            int j = 0;
+            for (j = i - 1; j >= 0; j--) {
+                if (arr[j] > temp) {
+                    arr[j + 1] = arr[j];
+                } else break;
             }
-            arr[j+1]=temp;
+            arr[j + 1] = temp;
         }
     }
 
@@ -64,27 +62,29 @@ public class Test21_Sort {
             arr[k] = temp;
         }
     }
-//kuaisu
-    public static void quick1(int arr[] ,int left,int right){
-        int l=left;
-        int h=right;
-        if(l<h){
-            int temp=arr[l];
-            while(l<h){
-                while(l<h&&arr[h]>=temp){
+
+    //kuaisu
+    public static void quick1(int arr[], int left, int right) {
+        int l = left;
+        int h = right;
+        if (l < h) {
+            int temp = arr[l];
+            while (l < h) {
+                while (l < h && arr[h] >= temp) {
                     h--;
                 }
-                arr[l]=arr[h];
-                while(l<h&&arr[l]<=temp){
+                arr[l] = arr[h];
+                while (l < h && arr[l] <= temp) {
                     l++;
                 }
-                arr[h]=arr[l];
-                arr[l]=temp;
+                arr[h] = arr[l];
+                arr[l] = temp;
             }
-            quick1(arr,left,l-1);
-            quick1(arr,l+1,right);
+            quick1(arr, left, l - 1);
+            quick1(arr, l + 1, right);
         }
     }
+
     //kuai
     public static void sort4(int low, int high, int[] arr) {
         int i = low;
@@ -135,9 +135,9 @@ public class Test21_Sort {
             arr[i] = sc.nextInt();
         }
         System.out.println(Arrays.toString(arr));
-       // Arrays.sort(arr);
+        // Arrays.sort(arr);
 //        diii(arr);
-         quick1(arr,2,4);
+        quick1(arr, 2, 4);
         // sort3(arr,0,4);
         //sort4(0, 4, arr);
         System.out.println(Arrays.toString(arr));

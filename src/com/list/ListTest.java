@@ -36,7 +36,9 @@ public class ListTest {
         System.out.println();
     }
 
-    /**链表反向*/
+    /**
+     * 链表反向
+     */
     public void reverse() {
         Node p = node;
         Node q = null;
@@ -49,6 +51,7 @@ public class ListTest {
         }
         node = q;
     }
+
     public static void main(String[] args) {
         ListTest listTest = new ListTest();
         int i = 10;

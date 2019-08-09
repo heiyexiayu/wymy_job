@@ -13,6 +13,6 @@ public class SubImpl implements Sub {
     @Override
     public String sayHello(String name) {
         System.out.println();
-        return name+"  say hello";
+        return name + "  say hello";
     }
 }
